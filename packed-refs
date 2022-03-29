@@ -1,0 +1,6 @@
+# pack-refs with: peeled fully-peeled 
+3a009daf3ee2635afb100cc9d6bab4bdd79001c2 refs/heads/feature/test-pr-no-merge
+c4005bd9df173c4a26c485d63a3a286a53c47d04 refs/heads/feature/test-trigger
+644af407918d4b25c9c7dc3874abca83bf17b831 refs/heads/master
+21038917aec999ebb19296f15f01e3875304d02b refs/heads/staging
+24b08a5cbb7d3346ae1cb638215584e43a87192f refs/heads/test-no-trigger

@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = true
+[user]
+	name = songbao2903
+[credential]
+	username = songbao2903
+[remote "origin"]
+	url = git@github.com:songbao2903/b7-node-hello.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[remote "origin1"]
+	url = git@github.com:songbao2903/b7-node-hello.git
+	fetch = +refs/heads/*:refs/remotes/origin1/*
