@@ -47,7 +47,7 @@ pipeline {
       stage('[NODEJS] Push to ECR') {
          steps {
             echo '****** Push docker image to ECR ******'
-	    sh 'chmod +x ./jenkins/build.sh' 	 
+	    sh 'chmod +x ./jenkins/push.sh' 	 
             sh './jenkins/push.sh'
          }
       }
