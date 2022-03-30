@@ -15,11 +15,12 @@ pipeline {
 	APP_VERSION = "${BUILD_ID}"
         APP_ENV = "${BRANCH_NAME}"
    
-        AWS_ACCESS_KEY_ID     = credentials('AWS_ACCESS_KEY_ID')
+       AWS_ACCESS_KEY_ID     = credentials('AWS_ACCESS_KEY_ID')
         AWS_SECRET_ACCESS_KEY = credentials('AWS_SECRET_ACCESS_KEY')
 	AWS_DEFAULT_REGION    = 'ap-southeast-1'
 	//AWS_DEFAULT_REGION    = 'us-east-1'
 	AWS_DEFAULT_OUTPUT    = 'json'
+	   
 	   
 	//ECR_REPO = '709026135780.dkr.ecr.' + ${AWS_DEFAULT_REGION} + '.amazonaws.com/nodejs'
 	//ECR_REPO = '709026135780.dkr.ecr.us-east-1.amazonaws.com/nodejs'
