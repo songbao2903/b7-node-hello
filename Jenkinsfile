@@ -1,7 +1,7 @@
 
 pipeline {
    
-   agent { label 'built-in node' }
+   agent { label 'node1' }
    
    environment { 
 	   
