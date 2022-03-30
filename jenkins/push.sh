@@ -7,7 +7,7 @@ export AWS_DEFAULT_OUTPUT=${AWS_DEFAULT_OUTPUT}
             
 #ECR_LOGIN_STRING=`aws ecr get-login --region ${AWS_DEFAULT_REGION} --no-include-email`
 #aws ecr get-login --no-include-momnhuong@gmail.com --region ap-southeast-1 
-docker login -u AWS -p $(aws ecr get-login-password --region ap-southeast-1) 709026135780.dkr.ecr.ap-southeast-1.amazonaws.com/nodejs
+docker login --username AWS --password-stdin $(aws ecr get-login-password --region ap-southeast-1) 709026135780.dkr.ecr.ap-southeast-1.amazonaws.com/nodejs
 #aws ecr get-login-password --region ap-southeast-1 | docker login --username AWS --password-stdin 709026135780.dkr.ecr.ap-southeast-1.amazonaws.com/nodejs
 
 #eval ${ECR_LOGIN_STRING}
