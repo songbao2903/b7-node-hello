@@ -59,7 +59,7 @@ pipeline {
 	    }
             steps {
 		echo "****** Deploy to ${BRANCH_NAME} branch ******"
-           //sh 'chmod +x ./jenkins/deploy_staging.sh' 
+           sh 'chmod +x ./jenkins/deploy_staging.sh' 
            sh './jenkins/deploy_staging.sh'
             }
         }
@@ -69,7 +69,7 @@ pipeline {
             }
             steps {
 		echo "****** Deploy to ${BRANCH_NAME} branch ******"
-            //sh 'chmod +x ./jenkins/deploy_release.sh'    
+            sh 'chmod +x ./jenkins/deploy_release.sh'    
             sh './jenkins/deploy_release.sh'
             }
         }
