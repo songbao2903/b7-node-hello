@@ -40,7 +40,7 @@ pipeline {
       stage('[NODEJS] Build') {
          steps {
             echo '****** Build app ******'
-	    //sh 'chmod +x ./jenkins/build.sh' 
+	    sh 'chmod +x ./jenkins/build.sh' 
             sh './jenkins/build.sh'
          }
       }
@@ -48,7 +48,7 @@ pipeline {
       stage('[NODEJS] Push to ECR') {
          steps {
             echo '****** Push docker image to ECR ******'
-	    //sh 'chmod +x ./jenkins/push.sh' 	 
+	    sh 'chmod +x ./jenkins/push.sh' 	 
             sh './jenkins/push.sh'
          }
       }
