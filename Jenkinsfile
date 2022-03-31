@@ -1,7 +1,7 @@
 
 pipeline {
    
-   agent { label 'Master' }
+   agent { label 'node1' }
    
    environment { 
 	   
